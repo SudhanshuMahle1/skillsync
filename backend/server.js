@@ -13,7 +13,7 @@ app.use(cors());
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/skills", require("./routes/skillRoutes"));
 app.use("/api/projects", require("./routes/projectRoutes"));
-
+app.use("/api/dashboard", require("./routes/dashboardRoutes"));
 
 
 //test route
