@@ -3,6 +3,9 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+
 
 function App() {
   return (
@@ -22,6 +25,24 @@ function App() {
               <Dashboard />
             </PrivateRoute>
           }
+        />
+
+        <Route
+        path="/skills"
+        element={
+        <PrivateRoute>
+          <Skills />
+          </PrivateRoute>
+        }
+        />
+
+        <Route
+        path="/projects"
+        element={
+        <PrivateRoute>
+          <Projects />
+          </PrivateRoute>
+        }
         />
 
       </Routes>
